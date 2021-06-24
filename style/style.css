@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.post-link {
+    text-decoration: none;
+}
+
+header {
+    min-height: 350px;
+    background-color: red;
+    color: #fff;
+    /* use flex to manipulate the element position */
+    display: flex;
+    flex-direction: column;
+    /* putting the header element in the center */
+    justify-content: center;
+
+    /* in order to center this header horizontally */
+    align-items: center;
+
+    background-image: url(/assets/banner.jpeg);
+    /* use this to make large image fit in */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* applying the tint or transpacy forthe background image only */
+header > * {
+    z-index: 1;
+}
+
+/* adding fade on the header */
+header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* last digit is scale for transparency */
+    background-color: rgb(0, 0, 0, 0.3);
+
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    background-color: beige;
+    /* Note: instead of 100px (since this is constant) we can do
+    50% that way the radius is always going to be 50% */
+    border-radius: 50%;
+    background-image: url(/assets/profile2.png);
+
+    /* contain- the image within the box*/
+    /* background-size: cover;  */
+    
+    /* cover-  the background size cover always make sure it covers the full width and height of the div */
+    background-size: cover;
+}
+
+
+.profile-name {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.subtext {
+    /*Tip: Margin is the space from the div up and padding space from the div down*/
+    margin-top: 8px;
+}
+
+.main {
+    background-color: yellow;
+    height: 100px;
+    margin-top: 32px;
+
+    /* step 1: To make the blog div center inside div */
+    display: flex;
+
+    /* step 3: */
+    justify-content: center;
+}
+
+/* step 2 */
+.main-container {
+    max-width: 750px;
+    min-width: 100px;
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+
+
+footer {
+    min-height: 100px;
+    background-color: #eaecee70;
+    color: #929eaa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    font-size: 14px;
+}

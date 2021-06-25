@@ -73,8 +73,6 @@ header::after {
 }
 
 .main {
-    background-color: yellow;
-    height: 100px;
     margin-top: 32px;
 
     /* step 1: To make the blog div center inside div */
@@ -104,4 +102,55 @@ footer {
     align-items: center;
     margin-top: 40px;
     font-size: 14px;
+}
+
+
+.post {
+    display: flex;
+    /* border: width, type, color  */
+    border: 1px solid #eaecee;
+    border-radius: 8px;
+    min-height: 200px;
+    /* to prevent image from overflowing and make it  contain within this div container*/
+    overflow: hidden;
+}
+
+.post-image {
+    flex-basis: 40%;
+    background-image: url(https://images.unsplash.com/photo-1624572676531-b2dc9860ac2e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80);
+    /* this will fix the image size */
+    background-size: cover;
+    background-position: center;
+}
+
+.post-content {
+    flex-basis: 60%;
+    padding: 24px;
+}
+
+
+.post-date {
+    font-size: 12px;
+    color: #adb5bd;
+    font-weight: 600;
+}
+
+.post-title {
+    margin-top: 16px;
+    font-size: 1.5em;
+    color: #333;
+    font-weight: 600;
+}
+
+.post-title h4 {
+    margin: 0;
+}
+
+.post-text {
+    margin-top: 4px;
+    color: #495057;
+    font-weight: 400;
+    line-height: 1.4;
+    max-height: 65px;
+    overflow: hidden;
 }

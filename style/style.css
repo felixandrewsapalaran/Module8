@@ -113,6 +113,16 @@ footer {
     min-height: 200px;
     /* to prevent image from overflowing and make it  contain within this div container*/
     overflow: hidden;
+    transition: all 0.25s ease;
+    /* adding space on top of each blog post */
+    margin-top: 24px;
+
+}
+
+/* adding the hover effects */
+.post:hover {
+    transform: translate3d(0, -5px, 0);
+    box-shadow: 0 2rem 5rem 0 rgba(0,0,0,.1);
 }
 
 .post-image {
@@ -153,4 +163,36 @@ footer {
     line-height: 1.4;
     max-height: 65px;
     overflow: hidden;
+}
+
+/* no space between them means we are targetting both of them this for plus button*/
+.nav-button.new-post-button {
+    /* by changing that to fixed the plus button always follow or scrolls with you when you scroll down the list */
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    background-color: #004186;
+    color: cornsilk;
+    border-radius: 50%;
+    /* using these below we are going to center that plux icon */
+    display: flex;
+    /* to center horizantally  */
+    justify-content: center;
+    /* to center vertically as well */
+    align-items: center;
+
+    /* also adding a box shadow */
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+
+    /* adding transition effect when you hover on plus button*/
+    transition: all 0.25s ease;
+
+}
+
+/* adding hover effects for plus button */
+.nav-button.new-post-button:hover{
+    background-color: #002349;
 }

@@ -196,3 +196,15 @@ footer {
 .nav-button.new-post-button:hover{
     background-color: #002349;
 }
+
+/* specifically targetting the nav link */
+.navigation a{
+    /* remove the default underline design */
+    text-decoration: none;
+    color: #004186;
+    border: 1px solid #004186;
+    border-radius: 5px;
+    /* by adding padding it makes the box around that div larger  left&right 5px and top&bottom 8px*/
+    padding: 5px 8px;
+
+}

@@ -1,13 +1,25 @@
 /* ADD styling for all of the divs in post.html to match  */
 
 #individual-post-title {
+    text-align: center;
+    font-size: 2em;
+    padding-top: 24px;
+    padding-bottom: 24px;
 
 }
 
 #individual-post-date {
+    /* padding applies on top and bottom  and 16px left*/
+    padding: 24px 0 24px 16px;
+    border-top: 1px solid #f1f4f8;
+    border-bottom: 1px solid #f1f4f8;
+    color: #adb5bd;
 
 }
 
 #individual-post-content {
-
+    /* top 24px and left&right is 16px */
+    padding: 24px 16px 0 16px;
+    color: #495057;
+    line-height: 1.4;
 }
